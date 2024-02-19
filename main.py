@@ -1,9 +1,6 @@
-from flask import Flask
+# Caso Complexo
 
-app = Flask('app')
-
-@app.route('/')
-def hello_world():
-  return 'Hello, World!'
-
-app.run(host='0.0.0.0', port=8080)
+def str_endereco(endereco):
+  parte_endereco = endereco.split()  # Divide o endereço em partes separadas
+  nome_rua = ''
+  numero_rua = ''
