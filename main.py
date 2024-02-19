@@ -1,11 +1,11 @@
 # Caso Complexo
-
 def str_endereco(endereco):
-  parte_endereco = endereco.split()  # Divide o endereço em partes separadas
-  nome_rua = ''
-  numero_rua = ''
+    parte_endereco = endereco.split()  # Divide o endereço 
+    nome_rua = ''
+    numero_rua = ''
 
-# Se a primeira parte for um número:
-if parte_endereeco[0].isdigit():
-  numero_rua = partes[0]  # Primeira parte = número
-  nome_rua = ' '.join(partes[1:]) 
+    # Verifica se há vírgula
+    if "," in parte_endereco[0]:
+        numero_rua, *nome_rua = parte_endereco[0].split(",")  # Divide núm/rua
+        nome_rua = ' '.join(nome_rua + parte_endereco[1:])  
+   
